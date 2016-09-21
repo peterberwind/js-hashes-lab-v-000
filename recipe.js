@@ -16,7 +16,7 @@ function updateIngredient(recipe, ingredient, amount) {
 }
 
 function readRecipe(recipe) {
-  for (var ingredient in recipe) {
-    console.log(`this recipe calls for ${recipe[ingredient]} of ${ingredient}`);
+  for (var key in recipe) {
+    console.log("this recipe calls for " + recipe[key] + " of " + key);
   }
 }
